@@ -8,12 +8,12 @@ export default function Footer() {
 
   return (
     <footer className="bg-black text-gray-300 pt-16">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-10">
 
         {/* Columna 1: Logo, Título y Descripción */}
         <div className="md:col-span-1">
           <Link to="/" className="flex items-center space-x-3 mb-4">
-            <img src="/images/icons/logoMilitar.svg" alt="Logo Guardianes de Frontera" className="h-14 w-auto" />
+            <img src="/images/icons/logoMilitar.png" alt="Logo Guardianes de Frontera" className="h-14 w-auto" />
             <span className="text-white font-extrabold text-2xl font-['Oswald'] uppercase">Guardianes de Frontera</span>
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-gray-400 font-['Lora'] max-w-sm">
@@ -21,26 +21,13 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Columna 2: Enlaces de Navegación */}
-        <div className="md:col-span-1">
-          <h3 className="text-white font-bold text-lg mb-4 uppercase font-['Oswald'] tracking-wide">Navegación</h3>
-          <ul className="space-y-2 text-sm font-['Lora']">
-            <li><Link to="/" className="hover:text-green-400 transition-colors">Inicio</Link></li>
-            <li><Link to="/nosotros" className="hover:text-green-400 transition-colors">Nosotros</Link></li>
-            <li><Link to="/carreras" className="hover:text-green-400 transition-colors">Carreras</Link></li>
-            <li><Link to="/galeria" className="hover:text-green-400 transition-colors">Galería</Link></li>
-            <li><Link to="/noticias" className="hover:text-green-400 transition-colors">Noticias</Link></li>
-            <li><Link to="/contacto" className="hover:text-green-400 transition-colors">Contacto</Link></li>
-          </ul>
-        </div>
-
-        {/* Columna 3: Contacto y Redes Sociales */}
+        {/* Columna 2: Contacto y Redes Sociales */}
         <div className="md:col-span-1">
           <h3 className="text-white font-bold text-lg mb-4 uppercase font-['Oswald'] tracking-wide">Contacto</h3>
           <ul className="space-y-3 text-sm font-['Lora']">
             <li className="flex items-center space-x-3">
               <MapPin size={20} className="text-green-400 flex-shrink-0" />
-              <p>Buenos Aires, Argentina</p>
+              <p>Clorinda - Formosa, Argentina</p>
             </li>
             <li className="flex items-center space-x-3">
               <Phone size={20} className="text-green-400 flex-shrink-0" />

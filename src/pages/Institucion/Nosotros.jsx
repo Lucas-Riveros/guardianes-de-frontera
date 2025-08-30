@@ -23,17 +23,17 @@ export default function Nosotros() {
               </p>
             </div>
             <div>
-              <img src="/images/placeholder3.jpg" alt="Cadetes en formación" className="rounded-xl shadow-lg w-full" />
+              <img src="/images/img24.jpg" alt="Cadetes en formación" className="rounded-xl shadow-lg w-full" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Sección de Misión, Visión y Valores */}
-      <section id="mision-vision-valores" className="py-20 md:py-15 bg-white">
+      <section id="mision-vision-valores" className="py-20 md:py-15 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
-            <img src="/images/placeholder2.jpg" alt="Ceremonia militar" className="rounded-xl shadow-lg w-full" />
+            <img src="/images/img10.jpg" alt="Ceremonia militar" className="rounded-xl shadow-lg w-full" />
           </div>
           <div className="order-1 md:order-2">
             <h2 className="text-2xl md:text-3xl font-bold mb-6 uppercase text-gray-800 font-['Oswald']">Nuestros Pilares Fundamentales</h2>
@@ -86,7 +86,7 @@ export default function Nosotros() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 uppercase text-gray-800 font-['Oswald']">Nuestra Trayectoria: Un Legado de Honor</h2>
           <p className="text-lg leading-relaxed text-gray-700 mb-4 font-['Lora']">
-            La Escuela de Entrenamiento Militar <strong>Guardianes de Frontera</strong> nació con el firme propósito de fortalecer los valores patrióticos y preparar a las nuevas generaciones para servir a la nación con el más alto honor. A lo largo de su historia, nuestra institución ha evolucionado y se ha consolidado como un referente en la formación militar, contribuyendo al desarrollo de oficiales altamente capacitados y comprometidos.
+            La Escuela de Entrenamiento Militar <strong>Guardianes de Frontera</strong> nació con el firme propósito de fortalecer los valores patrióticos y preparar a las nuevas generaciones para servir a la nación con el más alto honor.
           </p>
           <p className="text-lg leading-relaxed text-gray-700 font-['Lora']">
             Cada cadete que pasa por nuestras filas se convierte en parte de un legado de disciplina, sacrificio y vocación de servicio. Continuamos adaptándonos a los desafíos modernos sin perder la esencia que nos define.

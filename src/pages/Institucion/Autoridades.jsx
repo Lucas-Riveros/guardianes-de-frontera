@@ -9,19 +9,19 @@ export default function Autoridades() {
         cargo: "Director General",
         nombre: "Coronel Juan Pérez",
         descripcion: "Responsable de la dirección estratégica y la administración general de la Escuela, asegurando el cumplimiento de la misión institucional.",
-        imagen: "/images/placeholder1.jpg" // Reemplaza con la imagen real
+        imagen: "/images/icons/logoMilitar.png" // Reemplaza con la imagen real
       },
       {
         cargo: "Subdirector Académico",
         nombre: "Teniente María López",
         descripcion: "Supervisa el plan de estudios, la calidad educativa y el rendimiento académico de los cadetes.",
-        imagen: "/images/placeholder2.jpg" // Reemplaza con la imagen real
+        imagen: "/images/icons/logoMilitar.png" // Reemplaza con la imagen real
       },
       {
         cargo: "Jefe de Formación Militar",
         nombre: "Mayor Carlos Gómez",
         descripcion: "Encargado de la instrucción, disciplina y desarrollo físico-militar de los cadetes.",
-        imagen: "/images/placeholder3.jpg"// Reemplaza con la imagen real
+        imagen: "/images/icons/logoMilitar.png" // Reemplaza con la imagen real
       }
     ],
     areas: [

@@ -1,4 +1,5 @@
 import Hero from "../components/Hero";
+import Carreras from "../components/Carreras";
 
 export default function Home() {
   return (
@@ -38,27 +39,7 @@ export default function Home() {
       </section>
 
       {/* Carreras */}
-      <section id="carreras" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 uppercase font-['Oswald']">
-            Carreras Destacadas
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gray-100 p-6 rounded-xl shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-2 font-['Oswald']">Formación Básica</h3>
-              <p className="font-['Lora']">Desarrolla las competencias esenciales de disciplina, liderazgo y resiliencia.</p>
-            </div>
-            <div className="bg-gray-100 p-6 rounded-xl shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-2 font-['Oswald']">Entrenamiento Avanzado</h3>
-              <p className="font-['Lora']">Preparación táctica y estratégica para escenarios exigentes.</p>
-            </div>
-            <div className="bg-gray-100 p-6 rounded-xl shadow-md text-center">
-              <h3 className="text-xl font-semibold mb-2 font-['Oswald']">Especializaciones</h3>
-              <p className="font-['Lora']">Programas enfocados en áreas específicas de seguridad y defensa.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Carreras />
 
       {/* Sección Redes Sociales */}
       <section id="redes" className="py-20 bg-gray-100">
@@ -112,17 +93,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA final */}
-      <section id="cta" className="py-20 bg-green-700 text-white text-center">
-        <h2 className="text-3xl font-bold mb-6 font-['Oswald']">
-          ¿Listo para dar el siguiente paso?
-        </h2>
-        <a
-          href="/contacto"
-          className="px-8 py-4 bg-black/80 hover:bg-black rounded-lg shadow-md text-lg font-semibold uppercase font-['Oswald']"
-        >
-          Postúlate ahora
-        </a>
+      {/* CTA final con imagen parallax */}
+      <section
+        id="cta"
+        className="relative h-[30vh] bg-fixed bg-center bg-cover flex items-center justify-center text-center"
+        style={{ backgroundImage: "url('/images/img15.jpg')" }}
+      >
+        {/* Overlay oscuro */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        {/* Contenido */}
+        <div className="relative z-10 px-4">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-['Oswald'] text-white uppercase drop-shadow-lg">
+            ¿Listo para dar el siguiente paso?
+          </h2>
+          <a
+            href="/Contacto"
+            className="px-8 py-4 bg-green-600 hover:bg-green-700 rounded-lg shadow-md text-lg font-semibold uppercase font-['Oswald'] transition"
+          >
+            Postúlate ahora
+          </a>
+        </div>
       </section>
     </main>
   );

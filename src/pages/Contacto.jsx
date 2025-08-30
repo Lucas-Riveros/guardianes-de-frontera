@@ -4,21 +4,21 @@ export default function Contacto() {
   return (
     <section id="contacto" className="py-30 scroll-mt-10 bg-gray-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        
+
         {/* Título */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Contacto
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Unite a la <strong>Escuela de Entrenamiento Militar Guardianes de Frontera </strong>  
+            Unite a la <strong>Escuela de Entrenamiento Militar Guardianes de Frontera </strong>
             y comenzá tu camino de disciplina, liderazgo y fortaleza.
           </p>
         </div>
 
         {/* Grid: Formulario + Datos */}
         <div className="grid md:grid-cols-2 gap-12">
-          
+
           {/* Formulario */}
           <form className="bg-white shadow-md rounded-2xl p-8 space-y-6">
             <div>
@@ -108,7 +108,7 @@ export default function Contacto() {
         <div className="mt-16">
           <iframe
             title="Ubicación Escuela Guardianes de Frontera"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14422.781938389284!2d-58.1902073!3d-26.1845567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450cf225e7c7d3%3A0x5f38f2785dfe8c17!2sFormosa%2C%20Argentina!5e0!3m2!1ses!2sar!4v1692533317000!5m2!1ses!2sar"
+            src= "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57720.18060077442!2d-57.7466699!3d-25.2870205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945d08c471ba6e83%3A0x8d775f5d68bae58c!2sClorinda%2C%20Formosa!5e0!3m2!1ses!2sar!4v1756574417274!5m2!1ses!2sar"
             width="100%"
             height="400"
             style={{ border: 0 }}
