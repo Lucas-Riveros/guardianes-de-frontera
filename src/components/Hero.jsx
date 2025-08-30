@@ -1,27 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Hero() {
-  // Lista de videos en orden descendente
-  const videos = ["/videos/vid3.mp4", "/videos/vid6.mp4"]
-  const [currentVideo, setCurrentVideo] = useState(0);
-
-  const handleVideoEnd = () => {
-    // avanzar al siguiente video, si es el último vuelve al inicio
-    setCurrentVideo((prev) => (prev + 1) % videos.length);
-  };
-
   return (
     <section id="hero" className="relative h-screen overflow-hidden">
-      {/* Video de fondo dinámico */}
+      {/* Video de fondo único */}
       <video
-        key={videos[currentVideo]} // fuerza que se reinicie cada vez
         className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
         autoPlay
         muted
+        loop
         playsInline
-        onEnded={handleVideoEnd}
       >
-        <source src={videos[currentVideo]} type="video/mp4" />
+        <source src="/videos/vid3.mp4" type="video/mp4" />
         Tu navegador no soporta el video.
       </video>
 
@@ -41,7 +31,7 @@ export default function Hero() {
 
         {/* Subtítulo */}
         <p className="text-lg md:text-2xl mb-8 max-w-3xl font-['Lora'] italic">
-          Forjando líderes con disciplina, resiliencia y fortaleza
+          Forjando carácter, disciplina y liderazgo para el futuro
         </p>
 
         {/* Botón */}
