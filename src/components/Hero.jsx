@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function Hero() {
   // Lista de videos en orden descendente
-  const videos = ["/videos/vid3.mp4", "/videos/vid2.mp4"]
+  const videos = ["/videos/vid3.mp4", "/videos/vid6.mp4"]
   const [currentVideo, setCurrentVideo] = useState(0);
 
   const handleVideoEnd = () => {

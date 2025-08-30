@@ -75,7 +75,7 @@ export default function Actividades() {
             <SwiperSlide>
               <video
                 className="w-full h-[300px] md:h-[500px] object-cover rounded-xl shadow-md"
-                src="/videos/vid2.mp4"
+                src="/videos/vid6.mp4"
                 autoPlay
                 muted
                 loop
