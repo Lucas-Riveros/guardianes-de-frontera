@@ -4,11 +4,17 @@ export default function Home() {
   return (
     <main className="text-gray-900">
       {/* Hero */}
-      <section
-        id="hero"
-        className="relative h-screen bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/img6.jpg')" }}
-      >
+      <section id="hero" className="relative h-screen overflow-hidden">
+        {/* Video de fondo único */}
+        <video
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
+          src="/videos/vid3.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+
         {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-black/60"></div>
 
@@ -81,46 +87,6 @@ export default function Home() {
           <p className="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto font-['Lora']">
             Seguinos en nuestras redes sociales para estar al día con las últimas actividades, noticias y logros de nuestros cadetes.
           </p>
-
-          {/* Grid 2 columnas */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-            {/* Columna Instagram */}
-            <div className="flex flex-col items-center">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800 font-['Oswald']">Instagram</h3>
-              <div className="w-full flex justify-center">
-                <iframe
-                  src="https://www.instagram.com/galacticboy_21/embed"
-                  width="8000"
-                  height="500"
-                  frameBorder="0"
-                  scrolling="no"
-                  allowTransparency="true"
-                  allow="encrypted-media"
-                  className="rounded-xl shadow-lg"
-                ></iframe>
-              </div>
-            </div>
-
-            {/* Columna Facebook */}
-            <div className="flex flex-col items-center">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800 font-['Oswald']">Facebook</h3>
-              <div className="w-full flex justify-center">
-                <iframe
-                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flucasgonzalo.riveros%2Fposts%2F1320881204620390%3A800194651236953&show_text=false&width=1500"
-                  height="500"
-                  width="1500"
-                  style={{ border: "none", overflow: "hidden" }}
-                  scrolling="no"
-                  frameBorder="0"
-                  allowFullScreen={true}
-                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                  className="rounded-xl shadow-lg"
-                ></iframe>
-              </div>
-            </div>
-
-          </div>
         </div>
       </section>
 
