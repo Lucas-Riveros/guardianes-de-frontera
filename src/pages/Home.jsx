@@ -1,4 +1,3 @@
-import Hero from "../components/Hero";
 import Carreras from "../components/Carreras";
 
 export default function Home() {
@@ -9,14 +8,12 @@ export default function Home() {
         {/* Video de fondo único */}
         <video
           className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
+          src="/videos/vid3.mp4"
           autoPlay
           muted
           loop
           playsInline
-        >
-          <source src="/videos/vid3.mp4" type="video/mp4" />
-          Tu navegador no soporta el video.
-        </video>
+        />
 
         {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-black/60"></div>
