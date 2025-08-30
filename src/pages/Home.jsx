@@ -4,17 +4,11 @@ export default function Home() {
   return (
     <main className="text-gray-900">
       {/* Hero */}
-      <section id="hero" className="relative h-screen overflow-hidden">
-        {/* Video de fondo único */}
-        <video
-          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
-          src="/videos/vid3.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
-
+      <section
+        id="hero"
+        className="relative h-screen bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/img6.jpg')" }}
+      >
         {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-black/60"></div>
 
