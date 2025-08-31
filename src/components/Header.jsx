@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { FaFacebook, FaInstagram, FaXTwitter } from 'react-icons/fa6';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa6';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -159,14 +159,14 @@ export default function Header() {
 
                         {/* Íconos de redes sociales */}
                         <div className="flex items-center space-x-4 ml-6">
-                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors">
+                            <a href="https://www.facebook.com/guardianes%20de%20frontera"  target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors">
                                 <FaFacebook size={24} />
                             </a>
-                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors">
+                            <a href="https://www.instagram.com/Guardianesdefrontera" target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors">
                                 <FaInstagram size={24} />
                             </a>
-                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors">
-                                <FaXTwitter size={24} />
+                            <a href="https://www.youtube.com/Guardianesdefrontera"  target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors">
+                                <FaYoutube size={24} />
                             </a>
                         </div>
                     </div>

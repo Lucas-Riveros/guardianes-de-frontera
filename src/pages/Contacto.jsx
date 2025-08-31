@@ -76,14 +76,15 @@ export default function Contacto() {
             </div>
             <div className="flex items-center space-x-4">
               <Phone className="h-6 w-6 text-green-600" />
-              <a href="tel:+541100000000" className="text-gray-700 hover:text-green-600">
-                +54 11 0000-0000
+              <a href="tel:+54-3718653578" className="text-gray-700 hover:text-green-600">
+                +54 3718653578
               </a>
             </div>
             <div className="flex items-center space-x-4">
               <Mail className="h-6 w-6 text-green-600" />
-              <a href="mailto:info@guardianesdefrontera.com" className="text-gray-700 hover:text-green-600">
-                info@guardianesdefrontera.com
+              <a href="mailto:escuelaguardianesdefrontera@gmail.com" className="text-gray-700 hover:text-green-600">
+                escuelaguardianesdefrontera@gmail.com
+
               </a>
             </div>
 
@@ -93,11 +94,11 @@ export default function Contacto() {
                 Postúlate y comenzá a forjar tu camino de liderazgo y disciplina.
               </p>
               <a
-                href="https://wa.me/541100000000"
+                href="https://wa.me/543718653578"
                 target="_blank"
                 className="inline-block bg-white text-green-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100"
               >
-                Inscribirme por WhatsApp
+                Consulta por WhatsApp
               </a>
             </div>
           </div>
@@ -108,7 +109,7 @@ export default function Contacto() {
         <div className="mt-16">
           <iframe
             title="Ubicación Escuela Guardianes de Frontera"
-            src= "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57720.18060077442!2d-57.7466699!3d-25.2870205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945d08c471ba6e83%3A0x8d775f5d68bae58c!2sClorinda%2C%20Formosa!5e0!3m2!1ses!2sar!4v1756574417274!5m2!1ses!2sar"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57720.18060077442!2d-57.7466699!3d-25.2870205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945d08c471ba6e83%3A0x8d775f5d68bae58c!2sClorinda%2C%20Formosa!5e0!3m2!1ses!2sar!4v1756574417274!5m2!1ses!2sar"
             width="100%"
             height="400"
             style={{ border: 0 }}
