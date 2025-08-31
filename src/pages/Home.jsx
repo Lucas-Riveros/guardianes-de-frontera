@@ -1,18 +1,11 @@
 import Carreras from "../components/Carreras";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
     <main className="text-gray-900">
       {/* Hero */}
-
-      <video
-        className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2 object-cover"
-        src="/videos/vid3.mp4"
-        autoPlay
-        muted
-        loop
-        playsInline
-      />
+      <Hero />
 
       {/* Bienvenida */}
       <section id="bienvenida" className="py-20 bg-gray-100 relative">
