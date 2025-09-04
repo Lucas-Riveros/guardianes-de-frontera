@@ -25,19 +25,19 @@ export default function Hero() {
           Escuela de Entrenamiento Militar
         </h2>
 
-        <h1 className="text-5xl md:text-8xl font-extrabold mb-6 font-['Oswald'] uppercase leading-tight drop-shadow-[0_0_10px_rgba(0,0,0,0.8)]">
+        <h1 className="text-5xl md:text-8xl font-extrabold mb-6 font-['Oswald'] text-moztaza uppercase leading-tight]">
           Guardianes de Frontera
         </h1>
 
         {/* Subtítulo */}
-        <p className="text-lg md:text-2xl mb-8 max-w-3xl font-['Lora'] italic">
+        <p className="text-m md:text-2xl mb-8 max-w-3xl font-['Lora'] italic">
           Forjando carácter, disciplina y liderazgo para el futuro
         </p>
 
         {/* Botón */}
         <a
           href="/Contacto"
-          className="px-8 py-4 bg-green-600 hover:bg-green-700 text-xl font-bold rounded-xl shadow-md font-['Oswald'] uppercase transition"
+          className="px-8 py-4 bg-oliva hover:bg-musgo text-xl font-bold rounded-xl shadow-md font-['Oswald'] uppercase transition"
         >
           Postúlate ahora
         </a>

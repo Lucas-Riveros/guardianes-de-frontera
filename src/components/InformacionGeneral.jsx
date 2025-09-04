@@ -1,17 +1,17 @@
 import React from 'react';
 import { ShieldCheck, Target, Users, BookOpen, HeartPulse, Sparkles, Scale, Handshake, Waves } from 'lucide-react';
-import Certificados from '../../components/Certificados';
+import Certificados from './Certificados';
 
 export default function InformacionGeneral() {
   return (
     <>
       {/* Sección 1: Introducción y Quiénes Somos */}
-      <section className="max-w-6xl mx-auto px-6 py-5 md:py-5 mt-25 text-gray-800">
+      <section className="max-w-6xl mx-auto px-6 py-5 md:py-5 mt-15 text-gray-800">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide mb-4 text-gray-900 font-['Oswald']">
             Formación Integral: Nuestro Compromiso
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto font-['Lora']">
+          <p className="text-lg md:text-xl text-justify text-gray-600 max-w-3xl mx-auto font-['Lora']">
             En la Escuela de Entrenamiento Militar "Guardianes de Frontera", nuestra oferta no es solo educativa, es un proyecto de vida. Te invitamos a conocer el camino que te transformará en un líder con disciplina, carácter y un profundo sentido de servicio.
           </p>
         </div>
@@ -21,7 +21,7 @@ export default function InformacionGeneral() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4 uppercase text-gray-800 font-['Oswald']">
               Una Experiencia de Transformación
             </h2>
-            <p className="text-gray-700 leading-relaxed text-lg font-['Lora'] mb-6">
+            <p className="text-gray-700 text-justify leading-relaxed text-lg font-['Lora'] mb-6">
               Nuestra escuela es una sociedad dedicada a fortalecer el carácter a través de actividades de alto impacto, circuitos de entrenamiento y orden cerrado. Cada desafío está diseñado para llevarte a tus límites, forjando una personalidad resiliente, entregada y fuerte. Los entrenamientos se clasifican por niveles, aumentando progresivamente en intensidad y resistencia, promoviendo el crecimiento constante del alumno.
             </p>
             <p className="text-gray-700 leading-relaxed text-lg font-['Lora']">
@@ -45,14 +45,14 @@ export default function InformacionGeneral() {
       </section>
 
       {/* Sección 2: Objetivos y Contenido Académico */}
-      <section className="max-w-6xl mx-auto px-6 py-20 md:py-10">
+      <section className="max-w-6xl mx-auto px-6 py-10 md:py-10">
         <h2 className="text-2xl md:text-3xl font-bold uppercase text-center mb-12 text-gray-800 font-['Oswald']">
           Un Plan de Estudios para la Vida
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {/* Objetivos */}
-          <div className="bg-green-50 p-8 rounded-xl shadow-lg border-l-4 border-green-700">
-            <h3 className="text-xl font-semibold text-green-900 font-['Oswald'] flex items-center mb-4">
+          <div className="bg-green-50 p-8 rounded-xl shadow-lg border-l-4 border-oliva">
+            <h3 className="text-xl font-semibold text-oliva font-['Oswald'] flex items-center mb-4">
               <Target size={24} className="mr-2" />
               Nuestros Objetivos
             </h3>
@@ -86,21 +86,21 @@ export default function InformacionGeneral() {
             </h3>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 text-gray-700 font-['Lora'] text-sm">
               <ul className="space-y-2">
-                <li className="flex items-center"><ShieldCheck size={18} className="text-green-700 mr-2" /> Orden Cerrado</li>
-                <li className="flex items-center"><Users size={18} className="text-green-700 mr-2" /> Tácticas y Defensa Personal</li>
-                <li className="flex items-center"><Waves size={18} className="text-green-700 mr-2" /> Natación</li>
-                <li className="flex items-center"><HeartPulse size={18} className="text-green-700 mr-2" /> RCP y Primeros Auxilios</li>
+                <li className="flex items-center"><ShieldCheck size={18} className="text-oliva mr-2" /> Orden Cerrado</li>
+                <li className="flex items-center"><Users size={18} className="text-oliva mr-2" /> Tácticas y Defensa Personal</li>
+                <li className="flex items-center"><Waves size={18} className="text-oliva mr-2" /> Natación</li>
+                <li className="flex items-center"><HeartPulse size={18} className="text-oliva mr-2" /> RCP y Primeros Auxilios</li>
               </ul>
               <ul className="space-y-2">
-                <li className="flex items-center"><Sparkles size={18} className="text-green-700 mr-2" /> Supervivencia</li>
-                <li className="flex items-center"><Scale size={18} className="text-green-700 mr-2" /> Taekwondo</li>
-                <li className="flex items-center"><Handshake size={18} className="text-green-700 mr-2" /> Lengua de Señas</li>
-                <li className="flex items-center"><ShieldCheck size={18} className="text-green-700 mr-2" /> Tiro</li>
+                <li className="flex items-center"><Sparkles size={18} className="text-oliva mr-2" /> Supervivencia</li>
+                <li className="flex items-center"><Scale size={18} className="text-oliva mr-2" /> Taekwondo</li>
+                <li className="flex items-center"><Handshake size={18} className="text-oliva mr-2" /> Lengua de Señas</li>
+                <li className="flex items-center"><ShieldCheck size={18} className="text-oliva mr-2" /> Tiro</li>
               </ul>
               <ul className="space-y-2">
-                <li className="flex items-center"><ShieldCheck size={18} className="text-green-700 mr-2" /> Entrenamiento con Canes</li>
-                <li className="flex items-center"><ShieldCheck size={18} className="text-green-700 mr-2" /> Orientación Vocacional</li>
-                <li className="flex items-center"><ShieldCheck size={18} className="text-green-700 mr-2" /> Inglés</li>
+                <li className="flex items-center"><ShieldCheck size={18} className="text-oliva mr-2" /> Entrenamiento con Canes</li>
+                <li className="flex items-center"><ShieldCheck size={18} className="text-oliva mr-2" /> Orientación Vocacional</li>
+                <li className="flex items-center"><ShieldCheck size={18} className="text-oliva mr-2" /> Inglés</li>
               </ul>
             </div>
           </div>
@@ -108,7 +108,9 @@ export default function InformacionGeneral() {
       </section>
 
       {/* Sección 3: Certificados a ancho completo */}
-      <Certificados />
+      <section className='bg-gray-50'>
+        <Certificados />
+      </section>
     </>
   );
 }

@@ -3,13 +3,14 @@ import ScrollToTop from "./components/ScrollToTop";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import RedesMovil from "./components/RedesMovil";
 
 import Home from "./pages/Home";
 import Nosotros from "./pages/Institucion/Nosotros";
 import Autoridades from "./pages/Institucion/Autoridades";
 
-import InformacionGeneral from "./pages/OfertaAcademica/InformacionGeneral";
-import Requisitos from "./pages/OfertaAcademica/Requisitos";
+import PlanEstudio from "./pages/OfertaAcademica/PlanEstudio";
+import Certificados from "./components/Certificados";
 import Actividades from "./pages/OfertaAcademica/Actividades";
 
 import Contacto from "./pages/Contacto";
@@ -17,21 +18,23 @@ import Contacto from "./pages/Contacto";
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <ScrollToTop/>
+      <ScrollToTop />
       <Header />
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Institución/Nosotros" element={<Nosotros />} />
-          <Route path="/Institución/Autoridades" element={<Autoridades />} />
+          <Route path="/institución/nosotros" element={<Nosotros />} />
+          <Route path="/institución/autoridades" element={<Autoridades />} />
 
-          <Route path="/Oferta-Académica/Informacion-General" element={<InformacionGeneral />} />
-          <Route path="/Oferta-Académica/Requisitos" element={<Requisitos />} />
-          <Route path="/Oferta-Académica/Actividades" element={<Actividades />} />
+          <Route path="/oferta-académica/plan-de-estudios" element={<PlanEstudio />} />
+          <Route path="/oferta-académica/certificados" element={<Certificados />} />
+          <Route path="/oferta-académica/actividades" element={<Actividades />} />
 
-          <Route path="/Contacto" element={<Contacto />} />
+
+          <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </main>
+      <RedesMovil />
       <Footer />
     </div>
   );

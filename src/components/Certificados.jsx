@@ -25,12 +25,12 @@ export default function Certificados() {
   ];
 
   return (
-    <section id="certificados" className="py-15 bg-gray-100 scroll-mt-20">
+    <section id="certificados" className="py-20 mt-10 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 font-['Oswald'] uppercase">
           Nuestros Certificados
         </h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-12 font-['Lora'] text-lg">
+        <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-justify font-['Lora'] text-lg">
           La Escuela de Entrenamiento Militar <strong>Guardianes de Frontera</strong> otorga títulos con <span className="text-green-700 font-semibold">validez nacional</span>, avalados por instituciones oficiales y reconocidos en el ámbito militar y de emergencias.
         </p>
 

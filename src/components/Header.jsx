@@ -72,7 +72,7 @@ export default function Header() {
                         <img
                             src="/images/icons/logoMilitar.png"
                             alt="Logo Guardianes de Frontera"
-                            className="h-10 w-auto"
+                            className="h-15 w-auto"
                         />
                         <span className="font-extrabold text-xl text-white tracking-wide font-['Oswald'] uppercase whitespace-nowrap">
                             Guardianes de Frontera
@@ -84,7 +84,7 @@ export default function Header() {
                         {/* Menú de navegación */}
                         <nav className="h-full flex items-center space-x-6">
                             <button
-                                className="h-full flex items-center hover:text-green-400 transition-colors bg-transparent border-none outline-none"
+                                className="h-full flex items-center hover:text-moztaza transition-colors bg-transparent border-none outline-none"
                                 onClick={() => handleNavClick("/")}
                             >
                                 Inicio
@@ -96,23 +96,23 @@ export default function Header() {
                                 onMouseLeave={scheduleClose}
                             >
                                 <button
-                                    className={`h-20 flex items-center gap-1 transition-colors ${openDropdown === "Institucion" ? "text-green-400" : "hover:text-green-400"}`}
+                                    className={`h-20 flex items-center gap-1 transition-colors ${openDropdown === "Institucion" ? "text-moztaza" : "hover:text-moztaza"}`}
                                     type="button"
                                 >
                                     Institución <ChevronDown size={16} className={`${openDropdown === "Institucion" ? "rotate-180" : ""} transition-transform duration-200`} />
                                 </button>
                                 <div
                                     ref={institucionRef}
-                                    className={`absolute left-0 top-[100%] w-48 text-sm rounded-b-lg border-t-2 border-green-700 bg-black/95 backdrop-blur-md shadow-lg py-2
+                                    className={`absolute left-0 top-[100%] w-48 text-sm rounded-b-lg border-t-2 border-moztaza bg-black/95 backdrop-blur-md shadow-lg py-2
                 transition-all ease-out duration-200 origin-top
                 ${openDropdown === "Institucion" ? "opacity-100 scale-y-100 pointer-events-auto" : "opacity-0 scale-y-95 pointer-events-none"}`}
                                 >
-                                    <button className="block px-4 py-2 hover:bg-green-700/30 w-full text-left bg-transparent border-none outline-none"
-                                        onClick={() => handleNavClick("/Institución/Nosotros")}>
+                                    <button className="block px-4 py-2 hover:bg-moztaza/30 w-full text-left bg-transparent border-none outline-none"
+                                        onClick={() => handleNavClick("/institución/nosotros")}>
                                         Nosotros
                                     </button>
-                                    <button className="block px-4 py-2 hover:bg-green-700/30 w-full text-left bg-transparent border-none outline-none"
-                                        onClick={() => handleNavClick("/Institución/Autoridades")}>
+                                    <button className="block px-4 py-2 hover:bg-moztaza/30 w-full text-left bg-transparent border-none outline-none"
+                                        onClick={() => handleNavClick("/institución/autoridades")}>
                                         Autoridades
                                     </button>
                                 </div>
@@ -124,34 +124,34 @@ export default function Header() {
                                 onMouseLeave={scheduleClose}
                             >
                                 <button
-                                    className={`h-20 flex items-center gap-1 transition-colors ${openDropdown === "OfertaAcademica" ? "text-green-400" : "hover:text-green-400"}`}
+                                    className={`h-20 flex items-center gap-1 transition-colors ${openDropdown === "OfertaAcademica" ? "text-moztaza" : "hover:moztaza"}`}
                                     type="button"
                                 >
                                     Oferta Académica <ChevronDown size={16} className={`${openDropdown === "OfertaAcademica" ? "rotate-180" : ""} transition-transform duration-200`} />
                                 </button>
                                 <div
                                     ref={ofertaRef}
-                                    className={`absolute left-0 top-[100%] w-56 text-sm rounded-b-lg border-t-2 border-green-700 bg-black/95 backdrop-blur-md shadow-lg py-2
+                                    className={`absolute left-0 top-[100%] w-56 text-sm rounded-b-lg border-t-2 border-moztaza bg-black/95 backdrop-blur-md shadow-lg py-2
                 transition-all ease-out duration-200 origin-top
                 ${openDropdown === "OfertaAcademica" ? "opacity-100 scale-y-100 pointer-events-auto" : "opacity-0 scale-y-95 pointer-events-none"}`}
                                 >
-                                    <button className="block px-4 py-2 hover:bg-green-700/30 w-full text-left bg-transparent border-none outline-none"
-                                        onClick={() => handleNavClick("/Oferta-Académica/Informacion-General")}>
-                                        Información General
+                                    <button className="block px-4 py-2 hover:bg-moztaza/30 w-full text-left bg-transparent border-none outline-none"
+                                        onClick={() => handleNavClick("/oferta-académica/plan-de-estudios")}>
+                                        Plan de Estudios
                                     </button>
-                                    <button className="block px-4 py-2 hover:bg-green-700/30 w-full text-left bg-transparent border-none outline-none"
-                                        onClick={() => handleNavClick("/Oferta-Académica/Actividades")}>
+                                    <button className="block px-4 py-2 hover:bg-moztaza/30 w-full text-left bg-transparent border-none outline-none"
+                                        onClick={() => handleNavClick("/oferta-académica/certificados")}>
+                                        Certificados
+                                    </button>
+                                    <button className="block px-4 py-2 hover:bg-moztaza/30 w-full text-left bg-transparent border-none outline-none"
+                                        onClick={() => handleNavClick("/oferta-académica/actividades")}>
                                         Actividades
-                                    </button>
-                                    <button className="block px-4 py-2 hover:bg-green-700/30 w-full text-left bg-transparent border-none outline-none"
-                                        onClick={() => handleNavClick("/Oferta-Académica/Requisitos")}>
-                                        Requisitos
                                     </button>
                                 </div>
                             </div>
                             <button
-                                className="h-full flex items-center hover:text-green-400 transition-colors bg-transparent border-none outline-none"
-                                onClick={() => handleNavClick("/Contacto")}
+                                className="h-full flex items-center hover:text-moztaza transition-colors bg-transparent border-none outline-none"
+                                onClick={() => handleNavClick("/contacto")}
                             >
                                 Contacto
                             </button>
@@ -159,13 +159,13 @@ export default function Header() {
 
                         {/* Íconos de redes sociales */}
                         <div className="flex items-center space-x-4 ml-6">
-                            <a href="https://www.facebook.com/guardianes%20de%20frontera"  target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors">
+                            <a href="https://www.facebook.com/guardianes%20de%20frontera" target="_blank" rel="noopener noreferrer" className="text-white hover:text-moztaza transition-colors">
                                 <FaFacebook size={24} />
                             </a>
-                            <a href="https://www.instagram.com/Guardianesdefrontera" target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors">
+                            <a href="https://www.instagram.com/Guardianesdefrontera" target="_blank" rel="noopener noreferrer" className="text-white hover:text-moztaza transition-colors">
                                 <FaInstagram size={24} />
                             </a>
-                            <a href="https://www.youtube.com/Guardianesdefrontera"  target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors">
+                            <a href="https://www.youtube.com/Guardianesdefrontera" target="_blank" rel="noopener noreferrer" className="text-white hover:text-moztaza transition-colors">
                                 <FaYoutube size={24} />
                             </a>
                         </div>
@@ -175,7 +175,7 @@ export default function Header() {
                     <div className="-mr-2 flex lg:hidden">
                         <button
                             type="button"
-                            className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-green-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-400"
+                            className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-moztaza focus:outline-none focus:ring-2 focus:ring-inset focus:ring-moztaza"
                             onClick={() => setIsOpen(!isOpen)}
                         >
                             <span className="sr-only">Abrir menú principal</span>
@@ -188,29 +188,30 @@ export default function Header() {
             {/* Menú móvil desplegable */}
             {isOpen && (
                 <div className="lg:hidden bg-black/90 backdrop-blur-md px-2 pt-2 pb-3 space-y-1 font-['Oswald'] text-white">
-                    <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700/30" onClick={() => setIsOpen(false)}>Inicio</Link>
+                    <Link to="/" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Inicio</Link>
                     <details className="w-full group">
-                        <summary className="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700/30 cursor-pointer list-none flex justify-between items-center">
+                        <summary className="block px-3 py-2 rounded-md text-base font-medium hover:bg-moztaza/30 cursor-pointer list-none flex justify-between items-center">
                             Institución
                             <ChevronDown size={16} className="transition-transform duration-200 group-open:rotate-180" />
                         </summary>
                         <div className="flex flex-col pl-4 mt-1 space-y-1">
-                            <Link to="/Institución/Nosotros" className="block px-3 py-2 text-sm rounded-md hover:bg-green-700/30" onClick={() => setIsOpen(false)}>Nosotros</Link>
-                            <Link to="/Institución/Autoridades" className="block px-3 py-2 text-sm rounded-md hover:bg-green-700/30" onClick={() => setIsOpen(false)}>Autoridades</Link>
+                            <Link to="/institución/nosotros" className="block px-3 py-2 text-sm rounded-md hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Nosotros</Link>
+                            <Link to="/institución/autoridades" className="block px-3 py-2 text-sm rounded-md hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Autoridades</Link>
                         </div>
                     </details>
                     <details className="w-full group">
-                        <summary className="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700/30 cursor-pointer list-none flex justify-between items-center">
+                        <summary className="block px-3 py-2 rounded-md text-base font-medium hover:bg-moztaza/30 cursor-pointer list-none flex justify-between items-center">
                             Oferta Académica
                             <ChevronDown size={16} className="transition-transform duration-200 group-open:rotate-180" />
                         </summary>
                         <div className="flex flex-col pl-4 mt-1 space-y-1">
-                            <Link to="/Oferta-Académica/Informacion-General" className="block px-3 py-2 text-sm rounded-md hover:bg-green-700/30" onClick={() => setIsOpen(false)}>Información General</Link>
-                            <Link to="/Oferta-Académica/Actividades" className="block px-3 py-2 text-sm rounded-md hover:bg-green-700/30" onClick={() => setIsOpen(false)}>Actividades</Link>
-                            <Link to="/Oferta-Académica/Requisitos" className="block px-3 py-2 text-sm rounded-md hover:bg-green-700/30" onClick={() => setIsOpen(false)}>Requisitos</Link>
+                            <Link to="/oferta-académica/plan-de-estudios" className="block px-3 py-2 text-sm rounded-md hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Plan de Estudios</Link>
+                            <Link to="/oferta-académica/certificados" className="block px-3 py-2 text-sm rounded-md hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Certificados</Link>
+                            <Link to="/oferta-académica/actividades" className="block px-3 py-2 text-sm rounded-md hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Actividades</Link>
+
                         </div>
                     </details>
-                    <Link to="/Contacto" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700/30" onClick={() => setIsOpen(false)}>Contacto</Link>
+                    <Link to="/contacto" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Contacto</Link>
                 </div>
             )}
         </header>

@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme{
+    --color-oliva: rgb(102, 107, 67);
+    --color-moztaza: rgb(216, 152, 62);
+    --color-moztaza-dark: rgb(180, 120, 45);
+    --color-hueso: rgb(251, 249, 228);
+    --color-musgo: rgb(73, 79, 43);
+}
+
 html {
   scroll-behavior: smooth;
 }

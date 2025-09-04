@@ -14,42 +14,42 @@ export default function Footer() {
         <div className="md:col-span-1">
           <Link to="/" className="flex items-center space-x-3 mb-4">
             <img src="/images/icons/logoMilitar.png" alt="Logo Guardianes de Frontera" className="h-14 w-auto" />
-            <span className="text-white font-extrabold text-2xl font-['Oswald'] uppercase">Guardianes de Frontera</span>
+            <span className="text-moztaza font-extrabold text-2xl font-['Oswald'] uppercase">Guardianes de Frontera</span>
           </Link>
-          <p className="mt-4 text-sm leading-relaxed text-gray-400 font-['Lora'] max-w-sm">
+          <p className="mt-4 text-s leading-relaxed text-gray-400 font-['Lora'] max-w-sm">
             Escuela de Entrenamiento Militar que promueve el liderazgo, la disciplina y la resiliencia en cada uno de sus aspirantes, cadetes y postulantes.
           </p>
         </div>
 
         {/* Columna 2: Contacto y Redes Sociales */}
         <div className="md:col-span-1">
-          <h3 className="text-white font-bold text-lg mb-4 uppercase font-['Oswald'] tracking-wide">Contacto</h3>
-          <ul className="space-y-3 text-sm font-['Lora']">
+          <h3 className="text-oliva font-bold text-lg mb-4 uppercase font-['Oswald'] tracking-wide">Contacto</h3>
+          <ul className="space-y-3 text-s font-['Lora']">
             <li className="flex items-center space-x-3">
-              <MapPin size={20} className="text-green-400 flex-shrink-0" />
+              <MapPin size={20} className="text-moztaza flex-shrink-0" />
               <p>Clorinda - Formosa, Argentina</p>
             </li>
             <li className="flex items-center space-x-3">
-              <Phone size={20} className="text-green-400 flex-shrink-0" />
-              <a href="tel:+54-3718653578" className="hover:text-green-400 transition-colors">+54-3718653578</a>
+              <Phone size={20} className="text-moztaza flex-shrink-0" />
+              <a href="tel:+54-3718653578" className="hover:text-green-700 transition-colors">+54-3718653578</a>
             </li>
             <li className="flex items-center space-x-3">
-              <Mail size={20} className="text-green-400 flex-shrink-0" />
-              <a href="mailto:escuelaguardianesdefrontera@gmail.com" className="hover:text-green-400 transition-colors">escuelaguardianesdefrontera@gmail.com</a>
+              <Mail size={20} className="text-moztaza flex-shrink-0" />
+              <a href="mailto:escuelaguardianesdefrontera@gmail.com" className="hover:text-green-700 transition-colors">escuelaguardianesdefrontera@gmail.com</a>
             </li>
           </ul>
 
           {/* Redes Sociales */}
           <div className="mt-8">
-            <h3 className="text-white font-bold text-lg mb-4 uppercase font-['Oswald'] tracking-wide">Síguenos</h3>
+            <h3 className="text-oliva font-bold text-lg mb-4 uppercase font-['Oswald'] tracking-wide">Síguenos</h3>
             <div className="flex space-x-5">
-              <a href="https://www.facebook.com/guardianes%20de%20frontera" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">
+              <a href="https://www.facebook.com/guardianes%20de%20frontera" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-moztaza transition-colors">
                 <FaFacebook size={24} />
               </a>
-              <a href="https://www.instagram.com/Guardianesdefrontera" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">
+              <a href="https://www.instagram.com/Guardianesdefrontera" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-moztaza transition-colors">
                 <FaInstagram size={24} />
               </a>
-              <a href="https://www.youtube.com/Guardianesdefrontera" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors">
+              <a href="https://www.youtube.com/Guardianesdefrontera" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-moztaza transition-colors">
                 <FaYoutube size={24} />
               </a>
             </div>
@@ -58,7 +58,7 @@ export default function Footer() {
       </div>
 
       {/* Derechos reservados (ajustados) */}
-      <div className="border-t border-gray-800 mt-16 py-6 text-center text-xs text-gray-600">
+      <div className="border-t border-gray-800 mt-16 py-6 text-center text- text-gray-600">
         <p>© {currentYear} Guardianes de Frontera. Todos los derechos reservados.</p>
       </div>
     </footer>

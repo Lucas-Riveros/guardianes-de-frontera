@@ -116,12 +116,12 @@ export default function Actividades() {
       >
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-['Oswald'] text-white uppercase drop-shadow-lg">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-['Oswald'] text-moztaza uppercase drop-shadow-lg">
             ¿Listo para formar parte?
           </h2>
           <a
             href="/contacto"
-            className="px-8 py-4 bg-green-600 hover:bg-green-700 rounded-lg shadow-md text-lg font-semibold uppercase font-['Oswald'] transition"
+            className="px-8 py-4 bg-oliva hover:bg-musgo rounded-lg shadow-md text-lg font-semibold uppercase text-white font-['Oswald'] transition"
           >
             Postúlate ahora
           </a>
