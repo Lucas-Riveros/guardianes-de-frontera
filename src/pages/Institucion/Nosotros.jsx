@@ -9,7 +9,7 @@ export default function Nosotros() {
     return (
         <main>
             {/* Sección principal de Quiénes Somos */}
-            <section id="quienes-somos" className="py-10 md:py-10 mt-20 bg-white">
+            <section id="quienes-somos" className="py-10 md:py-10 mt-20">
                 <div className="max-w-6xl mx-auto px-6">
                     <div className="text-center mb-16">
                         <h1 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide mb-4 text-gray-900 font-['Oswald']">
@@ -35,7 +35,7 @@ export default function Nosotros() {
             </section>
 
             {/* Sección de Misión, Visión y Valores (con cambios) */}
-            <section id="mision-vision-valores" className="py-10 md:py-20 bg-white">
+            <section id="mision-vision-valores" className="py-10 md:py-20">
                 <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
                     {/* Contenedor del Swiper */}

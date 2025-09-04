@@ -8,7 +8,7 @@ export default function Home() {
       <Hero />
 
       {/* Bienvenida */}
-      <section id="bienvenida" className="mt-20 bg-white relative">
+      <section id="bienvenida" className="mt-20 relative">
         <div className="max-w-5xl mx-auto text-center px-6">
           {/* Título principal */}
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 uppercase tracking-wide text-gray-900 font-['Oswald']">

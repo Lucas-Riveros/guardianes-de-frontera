@@ -21,14 +21,14 @@ export default function PlanEstudio() {
   ];
 
   return (
-    <section id="contenido" className="py-20 mt-10 bg-white">
+    <section id="contenido" className="py-20 mt-10">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
 
         {/* Título */}
         <h2 className="text-3xl md:text-4xl font-['Oswald'] font-bold text-gray-800 mb-4">
           Plan de Estudios
         </h2>
-        <p className="text-gray-600 font-['Lora'] max-w-3xl mx-auto mb-12">
+        <p className="text-gray-600 text-justify font-['Lora'] max-w-3xl mx-auto mb-12">
           Los entrenamientos abarcan desde la formación física y táctica, hasta
           competencias académicas y habilidades de supervivencia.
           Cada bloque de aprendizaje está diseñado para desarrollar fortaleza integral.

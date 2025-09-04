@@ -6,7 +6,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 export default function Actividades() {
   return (
-    <div className="bg-white text-gray-900">
+    <div className="text-gray-900">
       {/* Hero Parallax */}
       <section
         className="relative h-[70vh] bg-fixed bg-center bg-cover flex items-center justify-center"
@@ -43,7 +43,7 @@ export default function Actividades() {
       </section>
 
       {/* Swiper de imágenes/videos */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-16">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-10 font-['Oswald'] uppercase">
             Experiencias en Acción

@@ -7,7 +7,6 @@ export default function Autoridades() {
       {
         cargo: "Administradora Titular / Directora",
         nombre: "Paez, Patricia Noemí",
-        imagen: "" 
       },
       {
         cargo: "Instructor General",
@@ -29,7 +28,7 @@ export default function Autoridades() {
       </div>
 
       {/* Sección de Liderazgo Principal con 2 columnas */}
-      <div className="mb-16">
+      <div className="mb-16 bg-white">
         {/* Cambiado de 3 columnas a 2 en desktop: `md:grid-cols-2` */}
         <div className="grid md:grid-cols-2 gap-8">
           {autoridades.liderazgo.map((persona, index) => (
