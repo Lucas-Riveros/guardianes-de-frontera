@@ -79,12 +79,13 @@ function App() {
       style={{ minWidth: "363px" }}>
       {/* Marca de agua central (independiente) */}
       <div
-        className="fixed inset-0 -z-20 opacity-5 pointer-events-none"
+        className="fixed inset-0 -z-20 pointer-events-none"
         style={{
           backgroundImage: "url('/images/icons/logoMilitar.png')",
-          backgroundSize: "30%",
+          backgroundSize: "clamp(200px, 90vw, 800px)", // mínimo 200px, ideal 30% de viewport, máximo 500px
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
+          opacity: 0.04,
         }}
       ></div>
 
@@ -118,20 +119,28 @@ function App() {
       )}
 
       <ScrollToTop />
+
       <Header />
+
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
+
           <Route path="/institución/nosotros" element={<Nosotros />} />
           <Route path="/institución/autoridades" element={<Autoridades />} />
+
           <Route path="/oferta-académica/plan-de-estudios" element={<PlanEstudio />} />
           <Route path="/oferta-académica/certificados" element={<Certificados />} />
           <Route path="/oferta-académica/actividades" element={<Actividades />} />
+
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </main>
+
       <RedesMovil />
+
       <Footer />
+
     </div>
   );
 }
