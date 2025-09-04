@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -8,22 +9,26 @@ import RedesMovil from "./components/RedesMovil";
 import Home from "./pages/Home";
 import Nosotros from "./pages/Institucion/Nosotros";
 import Autoridades from "./pages/Institucion/Autoridades";
-
 import PlanEstudio from "./pages/OfertaAcademica/PlanEstudio";
 import Certificados from "./components/Certificados";
 import Actividades from "./pages/OfertaAcademica/Actividades";
-
 import Contacto from "./pages/Contacto";
 
 function App() {
-  const isDesktop = window.innerWidth >= 1680;
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1680);
+
+  // Responsive listener
+  useEffect(() => {
+    const handleResize = () => setIsDesktop(window.innerWidth >= 1680);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const palabras = `
-  Honor Esfuerzo Dedicación Carácter Disciplina Liderazgo Valor Coraje Lealtad Compromiso
-  Sacrificio Perseverancia Integridad Responsabilidad Excelencia Firmeza Resiliencia Vocación Patria Servicio
-`;
+    Honor Esfuerzo Dedicación Carácter Disciplina Liderazgo Valor Coraje Lealtad Compromiso
+    Sacrificio Perseverancia Integridad Responsabilidad Excelencia Firmeza Resiliencia Vocación Patria Servicio
+  `;
 
-  // Generador de SVG 
   const createSvg = (text) => {
     const fontFamily = "Oswald, sans-serif";
     const fontSize = 20;
@@ -32,9 +37,8 @@ function App() {
       .toUpperCase()
       .trim()
       .split(/\s+/)
-      .map((w, i) => (i % 3 === 2 ? w + " ✦" : w)); // cada 3 palabras agrega estrella
+      .map((w, i) => (i % 3 === 2 ? w + " ✦" : w));
 
-    // Cada 5 palabras una nueva línea
     const lines = words.reduce((acc, word, i) => {
       if (i % 5 === 0) acc.push([]);
       acc[acc.length - 1].push(word);
@@ -43,40 +47,39 @@ function App() {
 
     let tspans = "";
     lines.forEach((line, i) => {
-      tspans += `<tspan x="0" dy="${i === 0 ? 0 : lineHeight
-        }">${line.join(" ")}</tspan>`;
+      tspans += `<tspan x="0" dy="${i === 0 ? 0 : lineHeight}">${line.join(" ")}</tspan>`;
     });
 
     const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="500" height="${lines.length * lineHeight
-      }">
-      <defs>
-        <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" style="stop-color:rgba(0,0,0,0.25);stop-opacity:1" />
-          <stop offset="100%" style="stop-color:rgba(0,0,0,0.05);stop-opacity:1" />
-        </linearGradient>
-      </defs>
-      <text 
-        x="0" 
-        y="20" 
-        font-family="${fontFamily}" 
-        font-size="${fontSize}" 
-        fill="url(#grad)" 
-        letter-spacing="3"
-        font-weight="600"
-      >
-        ${tspans}
-      </text>
-    </svg>
-  `;
+      <svg xmlns="http://www.w3.org/2000/svg" width="500" height="${lines.length * lineHeight}">
+        <defs>
+          <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:rgba(0,0,0,0.25);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgba(0,0,0,0.05);stop-opacity:1" />
+          </linearGradient>
+        </defs>
+        <text 
+          x="0" 
+          y="20" 
+          font-family="${fontFamily}" 
+          font-size="${fontSize}" 
+          fill="url(#grad)"
+          letter-spacing="3"
+          font-weight="600"
+        >
+          ${tspans}
+        </text>
+      </svg>
+    `;
     return `data:image/svg+xml,${encodeURIComponent(svg)}`;
   };
 
   return (
-    <div className="min-h-screen flex flex-col relative">
-      {/* Marca de agua central */}
+    <div className="min-h-screen flex flex-col relative"
+      style={{ minWidth: "363px" }}>
+      {/* Marca de agua central (independiente) */}
       <div
-        className="fixed inset-0 -z-10 opacity-5 pointer-events-none"
+        className="fixed inset-0 -z-20 opacity-5 pointer-events-none"
         style={{
           backgroundImage: "url('/images/icons/logoMilitar.png')",
           backgroundSize: "30%",
@@ -85,9 +88,10 @@ function App() {
         }}
       ></div>
 
+      {/* Laterales SOLO en desktop ancho */}
       {isDesktop && (
         <>
-          {/* Palabras lateral izquierdo */}
+          {/* Lateral izquierdo */}
           <div
             className="fixed inset-y-0 left-0 w-[15vw] -z-10 overflow-hidden"
             style={{
@@ -95,11 +99,11 @@ function App() {
               backgroundSize: "500px auto",
               backgroundRepeat: "repeat",
               backgroundPosition: "0 0",
-              opacity: "0.25", // un poco más bajo para que quede elegante
+              opacity: "0.25",
             }}
           ></div>
 
-          {/* Palabras lateral derecho */}
+          {/* Lateral derecho */}
           <div
             className="fixed inset-y-0 right-0 w-[15vw] -z-10 overflow-hidden"
             style={{
