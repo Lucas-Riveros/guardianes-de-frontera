@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaUserCircle } from 'react-icons/fa'; // Importamos un icono de silueta de persona
 
 export default function Autoridades() {
   const autoridades = {
@@ -6,18 +7,13 @@ export default function Autoridades() {
       {
         cargo: "Administradora Titular / Directora",
         nombre: "Paez, Patricia Noemí",
-        imagen: "/images/icons/logoMilitar.png" // reemplaza con la foto real
-      },
-      {
-        cargo: "Administradora Suplente",
-        nombre: "Juan, Shaira Oriana",
-        imagen: "/images/icons/logoMilitar.png" // reemplaza con la foto real
+        imagen: "" 
       },
       {
         cargo: "Instructor General",
         nombre: "Cabo Primero Acosta, Claudia",
-        imagen: "/images/icons/logoMilitar.png" // reemplaza con la foto real
-      }
+        imagen: ""
+      },
     ],
   };
 
@@ -32,20 +28,27 @@ export default function Autoridades() {
         </p>
       </div>
 
-      {/* Sección de Liderazgo Principal */}
+      {/* Sección de Liderazgo Principal con 2 columnas */}
       <div className="mb-16">
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Cambiado de 3 columnas a 2 en desktop: `md:grid-cols-2` */}
+        <div className="grid md:grid-cols-2 gap-8">
           {autoridades.liderazgo.map((persona, index) => (
             <div
               key={index}
               className="bg-blanco p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1"
             >
               <div className="flex justify-center mb-4">
-                <img
-                  src={persona.imagen}
-                  alt={`Foto de ${persona.nombre}`}
-                  className="w-32 h-32 rounded-full object-cover border-4 border-oliva"
-                />
+                {persona.imagen ? (
+                  // Si hay una imagen real, la muestra
+                  <img
+                    src={persona.imagen}
+                    alt={`Foto de ${persona.nombre}`}
+                    className="w-32 h-32 rounded-full object-cover border-4 border-oliva"
+                  />
+                ) : (
+                  // Si no hay imagen, muestra el icono de la silueta
+                  <FaUserCircle className="w-32 h-32 text-gray-400 border-4 border-oliva rounded-full p-2" />
+                )}
               </div>
               <div className="text-center">
                 <h3 className="text-xl font-bold text-mostaza font-['Oswald'] uppercase">
