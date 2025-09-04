@@ -17,7 +17,17 @@ import Contacto from "./pages/Contacto";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
+      <div 
+        className="fixed inset-0 -z-10 opacity-5 pointer-events-none" 
+        style={{
+          backgroundImage: "url('/images/icons/logoMilitar.png')",
+          backgroundSize: '30%',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
+
       <ScrollToTop />
       <Header />
       <main className="flex-1">
@@ -29,7 +39,6 @@ function App() {
           <Route path="/oferta-académica/plan-de-estudios" element={<PlanEstudio />} />
           <Route path="/oferta-académica/certificados" element={<Certificados />} />
           <Route path="/oferta-académica/actividades" element={<Actividades />} />
-
 
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
