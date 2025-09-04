@@ -28,7 +28,7 @@ export default function Nosotros() {
                             </p>
                         </div>
                         <div>
-                            <img src="/images/img13.jpg" alt="Cadetes en formación" className="rounded-xl shadow-lg w-full" />
+                            <img src="/images/img10.jpg" alt="Cadetes en formación" className="rounded-xl shadow-lg w-full" />
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ export default function Nosotros() {
                         >
                             <SwiperSlide>
                                 <img
-                                    src="/images/img10.jpg"
+                                    src="/images/img12.jpg"
                                     alt="Imagen 1"
                                     className="w-full h-auto object-cover rounded-xl shadow-md"
                                 />
@@ -64,7 +64,7 @@ export default function Nosotros() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img
-                                    src="/images/img12.jpg"
+                                    src="/images/img13.jpg"
                                     alt="Imagen 3"
                                     className="w-full h-auto object-cover rounded-xl shadow-md"
                                 />
