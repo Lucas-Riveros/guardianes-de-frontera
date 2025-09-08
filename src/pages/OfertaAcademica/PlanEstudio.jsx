@@ -27,13 +27,13 @@ export default function Carreras() {
     {
       title: "Auxiliar de Brigadista",
       desc: "Capacitación integral en búsqueda, rescate y apoyo en situaciones de emergencia. Aprenderás técnicas de intervención rápida, uso de equipamiento y trabajo en equipo en contextos de riesgo.",
-      img: "/images/img1.jpg",
+      img: "/images/img23.jpg",
       link: "/oferta-académica/auxiliar-brigadista",
     },
     {
       title: "Primeros Auxilios Tácticos",
       desc: "Entrenamiento especializado en atención médica inmediata en situaciones críticas. Ideal para quienes desean actuar en escenarios de riesgo con protocolos de asistencia rápida y eficaz.",
-      img: "/images/img1.jpg",
+      img: "/images/img57.jpg",
       link: "/oferta-académica/primeros-auxilios",
     },
     {
