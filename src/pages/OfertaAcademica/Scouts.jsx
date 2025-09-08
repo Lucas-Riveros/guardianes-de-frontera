@@ -4,22 +4,32 @@ import { Users, HeartHandshake, BookOpenCheck, Handshake, Mountain } from "lucid
 export default function Scouts() {
   return (
     <main className="mt-20 text-black">
-      {/* Hero */}
-      <section className="relative py-20 bg-oliva text-center">
-        <div className="max-w-4xl mx-auto px-6">
-          <h1 className="text-moztaza text-4xl md:text-5xl font-['Oswald'] font-bold uppercase mb-6">
+      {/* Hero con video de fondo */}
+      <section className="relative h-[60vh] flex items-center justify-center text-center text-white overflow-hidden">
+        <video
+          src="/videos/vid11.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60" />
+
+        <div className="relative z-10 px-6 max-w-3xl">
+          <h1 className="text-moztaza text-5xl md:text-6xl font-['Oswald'] font-bold uppercase mb-6 drop-shadow-lg">
             Scouts
           </h1>
-          <p className="text-white text-lg md:text-xl">
+          <p className="text-lg md:text-xl leading-relaxed drop-shadow-md">
             Un movimiento juvenil internacional que forma líderes, fomenta la amistad y enseña a vivir en armonía con la naturaleza.
           </p>
         </div>
       </section>
 
       {/* Valores */}
-      <section className="py-16">
+      <section className="py-20">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold font-['Oswald'] uppercase mb-12 text-musgo-dark">
+          <h2 className="text-3xl md:text-4xl font-bold font-['Oswald'] uppercase mb-12 text-musgo-dark">
             Objetivos y Valores
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -32,10 +42,10 @@ export default function Scouts() {
               <motion.div
                 key={i}
                 whileHover={{ scale: 1.05 }}
-                className="bg-oliva text-hueso p-6 rounded-2xl shadow-md flex flex-col items-center gap-4"
+                className="bg-white border-2 border-oliva text-musgo-dark p-8 rounded-2xl shadow-md flex flex-col items-center gap-4 hover:shadow-xl transition"
               >
-                <Icon className="w-10 h-10" />
-                <h3 className="font-bold uppercase">{title}</h3>
+                <Icon className="w-12 h-12 text-oliva" />
+                <h3 className="font-bold uppercase text-lg">{title}</h3>
               </motion.div>
             ))}
           </div>
@@ -43,37 +53,35 @@ export default function Scouts() {
       </section>
 
       {/* Actividades */}
-      <section className="py-16 text-black">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold font-['Oswald'] uppercase mb-12 text-center">
-            Actividades Scouts
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <p>
-                Los Scouts disfrutan de experiencias únicas al aire libre,
-                desarrollando trabajo en equipo y liderazgo a través de actividades variadas.
-              </p>
-              <ul className="space-y-3 font-semibold">
-                <li>🌲 Campamentos y excursiones en la naturaleza</li>
-                <li>⛰️ Actividades de aventura como escalada o kayak</li>
-                <li>🤝 Servicio comunitario</li>
-                <li>🎉 Reuniones y eventos sociales</li>
-              </ul>
-            </div>
-
-            {/* Aquí está la nueva imagen que redirecciona */}
-            <a
-              href="/actividades" // Redirecciona a la página de actividades
-              className="block rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-all duration-300"
-            >
-              <img
-                src="/images/img69.jpg" // Cambia esta ruta por la de tu imagen
-                alt="Imagen de actividades scouts"
-                className="w-full h-100 object-cover"
-              />
-            </a>
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold font-['Oswald'] uppercase text-musgo-dark">
+              Actividades Scouts
+            </h2>
+            <p className="leading-relaxed text-lg">
+              Los Scouts disfrutan de experiencias únicas al aire libre,
+              desarrollando trabajo en equipo y liderazgo a través de actividades variadas.
+            </p>
+            <ul className="space-y-3 font-semibold text-gray-700">
+              <li>🌲 Campamentos y excursiones en la naturaleza</li>
+              <li>⛰️ Actividades de aventura como escalada o kayak</li>
+              <li>🤝 Servicio comunitario</li>
+              <li>🎉 Reuniones y eventos sociales</li>
+            </ul>
           </div>
+
+          {/* Video o imagen */}
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            className="rounded-2xl shadow-lg overflow-hidden"
+          >
+            <img
+              src="/images/img69.jpg" // Cambia esta ruta por la de tu imagen
+              alt="Imagen de actividades scouts"
+              className="w-full h-100 object-cover"
+            />
+          </motion.div>
         </div>
       </section>
 
@@ -122,6 +130,6 @@ export default function Scouts() {
           </p>
         </div>
       </section>
-    </main>
+    </main >
   );
 }

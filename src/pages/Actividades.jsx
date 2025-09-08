@@ -59,7 +59,7 @@ export default function Actividades() {
             <SwiperSlide>
               <video
                 className="w-full h-[300px] md:h-[500px] object-cover rounded-xl shadow-md"
-                src="/videos/vid5.mp4"
+                src="/videos/vid10.mp4"
                 autoPlay
                 muted
                 loop
@@ -67,7 +67,7 @@ export default function Actividades() {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/images/img7.jpg"
+                src="/images/img29.jpg"
                 alt="Incendio"
                 className="w-full h-[300px] md:h-[500px] object-cover rounded-xl shadow-md"
               />
@@ -75,7 +75,7 @@ export default function Actividades() {
             <SwiperSlide>
               <video
                 className="w-full h-[300px] md:h-[500px] object-cover rounded-xl shadow-md"
-                src="/videos/vid6.mp4"
+                src="/videos/vid12.mp4"
                 autoPlay
                 muted
                 loop
@@ -83,7 +83,7 @@ export default function Actividades() {
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/images/img8.jpg"
+                src="/images/img69.jpg"
                 alt="Supervivencia"
                 className="w-full h-[300px] md:h-[500px] object-cover rounded-xl shadow-md"
               />
