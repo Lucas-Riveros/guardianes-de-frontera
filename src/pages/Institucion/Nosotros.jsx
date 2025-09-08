@@ -22,15 +22,40 @@ export default function Nosotros() {
 
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-2xl md:text-3xl font-bold mb-4 uppercase text-gray-800 font-['Oswald']">Forjando Carácter y Liderazgo</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-4 uppercase text-gray-800 font-['Oswald']">
+                                Forjando Carácter y Liderazgo
+                            </h2>
                             <p className="text-gray-700 leading-relaxed text-lg font-['Lora'] text-justify">
                                 La Escuela de Entrenamiento Militar <strong>Guardianes de Frontera</strong> es más que un centro de formación; es un espacio donde se moldea el carácter y se forja el liderazgo. Nuestro compromiso es educar a hombres y mujeres para que sean ciudadanos íntegros, disciplinados y profundamente comprometidos con los valores de nuestra nación. A través de un enfoque que equilibra la excelencia académica con la formación física y moral, preparamos a nuestros cadetes para enfrentar los desafíos del futuro con honor y responsabilidad.
                             </p>
                         </div>
+
                         <div>
-                            <img src="/images/img10.jpg" alt="Cadetes en formación" className="rounded-xl shadow-lg w-full" />
+                            <img
+                                src="/images/img10.jpg"
+                                alt="Cadetes en formación"
+                                className="rounded-xl shadow-lg w-full h-64 md:h-80 lg:h-96 object-cover"
+                            />
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* Sección de Historia */}
+            <section
+                id="historia"
+                className="py-20 md:py-15 relative bg-fixed bg-cover bg-center"
+            >
+                <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-6 uppercase font-['Oswald']">
+                        Nuestra Trayectoria: Un Legado de Honor
+                    </h2>
+                    <p className="text-lg text-justify leading-relaxed mb-4 font-['Lora']">
+                        Nacimos con el firme propósito de fortalecer los valores patrióticos y preparar a las nuevas generaciones para servir a la nación con el más alto honor.
+                    </p>
+                    <p className="text-lg text-justify leading-relaxed font-['Lora']">
+                        Cada cadete que pasa por nuestras filas se convierte en parte de un legado de disciplina, sacrificio y vocación de servicio. Continuamos adaptándonos a los desafíos modernos sin perder la esencia que nos define.
+                    </p>
                 </div>
             </section>
 
@@ -43,7 +68,7 @@ export default function Nosotros() {
                         <Swiper
                             modules={[Pagination, Autoplay]}
                             pagination={{ clickable: true }}
-                            autoplay={{ delay: 3000 }}
+                            autoplay={{ delay: 1000 }}
                             loop
                             spaceBetween={20}
                             slidesPerView={1}
@@ -118,25 +143,6 @@ export default function Nosotros() {
                         </div>
                     </div>
 
-                </div>
-            </section>
-
-            {/* Sección de Historia */}
-            <section
-                id="historia"
-                className="py-20 md:py-15 relative bg-gray-100 bg-fixed bg-cover bg-center"
-            >
-
-                <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-6 uppercase font-['Oswald']">
-                        Nuestra Trayectoria: Un Legado de Honor
-                    </h2>
-                    <p className="text-lg text-justify leading-relaxed mb-4 font-['Lora']">
-                        Nacimos con el firme propósito de fortalecer los valores patrióticos y preparar a las nuevas generaciones para servir a la nación con el más alto honor.
-                    </p>
-                    <p className="text-lg text-justify leading-relaxed font-['Lora']">
-                        Cada cadete que pasa por nuestras filas se convierte en parte de un legado de disciplina, sacrificio y vocación de servicio. Continuamos adaptándonos a los desafíos modernos sin perder la esencia que nos define.
-                    </p>
                 </div>
             </section>
         </main>

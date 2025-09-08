@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, Target, Users, BookOpen, HeartPulse, Sparkles, Scale, Handshake, Waves } from 'lucide-react';
+import { BookOpen, Waves, HeartPulse, ClipboardList, Sword, Tent, Footprints, Hand, Crosshair, Dog, Compass, Languages, Target } from "lucide-react";
 import Certificados from './Certificados';
 
 export default function InformacionGeneral() {
@@ -86,21 +86,21 @@ export default function InformacionGeneral() {
             </h3>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 text-gray-700 font-['Lora'] text-sm">
               <ul className="space-y-2">
-                <li className="flex items-center"><ShieldCheck size={18} className="text-oliva mr-2" /> Orden Cerrado</li>
-                <li className="flex items-center"><Users size={18} className="text-oliva mr-2" /> Tácticas y Defensa Personal</li>
+                <li className="flex items-center"><ClipboardList size={18} className="text-oliva mr-2" /> Orden Cerrado</li>
+                <li className="flex items-center"><Sword size={18} className="text-oliva mr-2" /> Tácticas y Defensa Personal</li>
                 <li className="flex items-center"><Waves size={18} className="text-oliva mr-2" /> Natación</li>
                 <li className="flex items-center"><HeartPulse size={18} className="text-oliva mr-2" /> RCP y Primeros Auxilios</li>
               </ul>
               <ul className="space-y-2">
-                <li className="flex items-center"><Sparkles size={18} className="text-oliva mr-2" /> Supervivencia</li>
-                <li className="flex items-center"><Scale size={18} className="text-oliva mr-2" /> Taekwondo</li>
-                <li className="flex items-center"><Handshake size={18} className="text-oliva mr-2" /> Lengua de Señas</li>
-                <li className="flex items-center"><ShieldCheck size={18} className="text-oliva mr-2" /> Tiro</li>
+                <li className="flex items-center"><Tent size={18} className="text-oliva mr-2" /> Supervivencia</li>
+                <li className="flex items-center"><Footprints size={18} className="text-oliva mr-2" /> Taekwondo</li>
+                <li className="flex items-center"><Hand size={18} className="text-oliva mr-2" /> Lengua de Señas</li>
+                <li className="flex items-center"><Crosshair size={18} className="text-oliva mr-2" /> Tiro</li>
               </ul>
               <ul className="space-y-2">
-                <li className="flex items-center"><ShieldCheck size={18} className="text-oliva mr-2" /> Entrenamiento con Canes</li>
-                <li className="flex items-center"><ShieldCheck size={18} className="text-oliva mr-2" /> Orientación Vocacional</li>
-                <li className="flex items-center"><ShieldCheck size={18} className="text-oliva mr-2" /> Inglés</li>
+                <li className="flex items-center"><Dog size={18} className="text-oliva mr-2" /> Entrenamiento con Canes</li>
+                <li className="flex items-center"><Compass size={18} className="text-oliva mr-2" /> Orientación Vocacional</li>
+                <li className="flex items-center"><Languages size={18} className="text-oliva mr-2" /> Inglés</li>
               </ul>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function InformacionGeneral() {
       </section>
 
       {/* Sección 3: Certificados a ancho completo */}
-      <section className='bg-gray-50'>
+      <section>
         <Certificados />
       </section>
     </>

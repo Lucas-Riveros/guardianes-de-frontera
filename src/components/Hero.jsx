@@ -11,7 +11,7 @@ export default function Hero() {
         loop
         playsInline
       >
-        <source src="/videos/vid3.mp4" type="video/mp4" />
+        <source src="/videos/vid12.mp4" type="video/mp4" />
         Tu navegador no soporta el video.
       </video>
 

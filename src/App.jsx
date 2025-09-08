@@ -7,11 +7,20 @@ import Footer from "./components/Footer";
 import RedesMovil from "./components/RedesMovil";
 
 import Home from "./pages/Home";
+
 import Nosotros from "./pages/Institucion/Nosotros";
 import Autoridades from "./pages/Institucion/Autoridades";
+
+import AuxiliarBrigadista from "./pages/OfertaAcademica/AuxiliarBrigadista";
+import AuxiliarInstructor from "./pages/OfertaAcademica/AuxiliarInstructor";
+import PrimerosAuxilios from "./pages/OfertaAcademica/PrimerosAuxilios";
 import PlanEstudio from "./pages/OfertaAcademica/PlanEstudio";
+import Taekwondo from "./pages/OfertaAcademica/Taekwondo";
+import Scouts from "./pages/OfertaAcademica/Scouts";
 import Certificados from "./components/Certificados";
-import Actividades from "./pages/OfertaAcademica/Actividades";
+
+import Actividades from "./pages/Actividades";
+
 import Contacto from "./pages/Contacto";
 
 function App() {
@@ -129,9 +138,15 @@ function App() {
           <Route path="/institución/nosotros" element={<Nosotros />} />
           <Route path="/institución/autoridades" element={<Autoridades />} />
 
+          <Route path="/oferta-académica/auxiliar-brigadista" element={<AuxiliarBrigadista />} />
+          <Route path="/oferta-académica/auxiliar-instructor" element={<AuxiliarInstructor />} />
+          <Route path="/oferta-académica/primeros-auxilios" element={<PrimerosAuxilios />} />
           <Route path="/oferta-académica/plan-de-estudios" element={<PlanEstudio />} />
+          <Route path="/oferta-académica/taekwondo" element={<Taekwondo />} />
+          <Route path="/oferta-académica/scouts" element={<Scouts />} />
           <Route path="/oferta-académica/certificados" element={<Certificados />} />
-          <Route path="/oferta-académica/actividades" element={<Actividades />} />
+
+          <Route path="/actividades" element={<Actividades />} />
 
           <Route path="/contacto" element={<Contacto />} />
         </Routes>

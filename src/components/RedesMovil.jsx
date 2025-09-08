@@ -18,7 +18,7 @@ export default function RedesMovil() {
             className="mb-4 flex flex-col items-center space-y-3"
           >
             <a
-              href="https://wa.me/5491122334455"
+              href="https://wa.me/543718653578"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition"

@@ -140,15 +140,25 @@ export default function Header() {
                                         Plan de Estudios
                                     </button>
                                     <button className="block px-4 py-2 hover:bg-moztaza/30 w-full text-left bg-transparent border-none outline-none"
+                                        onClick={() => handleNavClick("/oferta-académica/taekwondo")}>
+                                        Taekwondo
+                                    </button>
+                                    <button className="block px-4 py-2 hover:bg-moztaza/30 w-full text-left bg-transparent border-none outline-none"
+                                        onClick={() => handleNavClick("/oferta-académica/scouts")}>
+                                        Scouts
+                                    </button>
+                                    <button className="block px-4 py-2 hover:bg-moztaza/30 w-full text-left bg-transparent border-none outline-none"
                                         onClick={() => handleNavClick("/oferta-académica/certificados")}>
                                         Certificados
                                     </button>
-                                    <button className="block px-4 py-2 hover:bg-moztaza/30 w-full text-left bg-transparent border-none outline-none"
-                                        onClick={() => handleNavClick("/oferta-académica/actividades")}>
-                                        Actividades
-                                    </button>
                                 </div>
                             </div>
+                            <button
+                                className="h-full flex items-center hover:text-moztaza transition-colors bg-transparent border-none outline-none"
+                                onClick={() => handleNavClick("/actividades")}
+                            >
+                                Actividades
+                            </button>
                             <button
                                 className="h-full flex items-center hover:text-moztaza transition-colors bg-transparent border-none outline-none"
                                 onClick={() => handleNavClick("/contacto")}
@@ -206,14 +216,16 @@ export default function Header() {
                         </summary>
                         <div className="flex flex-col pl-4 mt-1 space-y-1">
                             <Link to="/oferta-académica/plan-de-estudios" className="block px-3 py-2 text-sm rounded-md hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Plan de Estudios</Link>
+                            <Link to="/oferta-académica/taekwondo" className="block px-3 py-2 text-sm rounded-md hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Taekwondo</Link>
+                            <Link to="/oferta-académica/scouts" className="block px-3 py-2 text-sm rounded-md hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Scouts</Link>
                             <Link to="/oferta-académica/certificados" className="block px-3 py-2 text-sm rounded-md hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Certificados</Link>
-                            <Link to="/oferta-académica/actividades" className="block px-3 py-2 text-sm rounded-md hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Actividades</Link>
-
                         </div>
                     </details>
+                    <Link to="/actividades" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Actividades</Link>
                     <Link to="/contacto" className="block px-3 py-2 rounded-md text-base font-medium hover:bg-moztaza/30" onClick={() => setIsOpen(false)}>Contacto</Link>
                 </div>
-            )}
-        </header>
+            )
+            }
+        </header >
     );
 }
