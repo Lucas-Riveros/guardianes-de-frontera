@@ -65,7 +65,7 @@ export default function Carreras() {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-6 mt-10 text-center">
         {/* Carreras - Flyers */}
-        <h2 className="text-xxl md:text-4xl font-['Oswald'] font-bold text-oliva mb-10">
+        <h2 className="text-4xl md:text-4xl font-['Oswald'] font-bold text-oliva mb-10">
           Carreras y Disciplinas
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
