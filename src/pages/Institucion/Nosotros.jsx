@@ -82,21 +82,21 @@ export default function Nosotros() {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img
-                                    src="/images/img15.jpg"
+                                    src="/images/img13.jpg"
                                     alt="Imagen 2"
                                     className="w-full h-auto object-cover rounded-xl shadow-md"
                                 />
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img
-                                    src="/images/img13.jpg"
+                                    src="/images/img15.jpg"
                                     alt="Imagen 3"
                                     className="w-full h-auto object-cover rounded-xl shadow-md"
                                 />
                             </SwiperSlide>
                             <SwiperSlide>
                                 <img
-                                    src="/images/img17.jpg"
+                                    src="/images/img63.jpg"
                                     alt="Imagen 4"
                                     className="w-full h-auto object-cover rounded-xl shadow-md"
                                 />
