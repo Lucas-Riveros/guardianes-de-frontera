@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Institución -->
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/institución/nosotros</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/institución/autoridades</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Oferta Académica -->
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/oferta-académica/auxiliar-brigadista</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/oferta-académica/auxiliar-instructor</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/oferta-académica/primeros-auxilios</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/oferta-académica/plan-de-estudios</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/oferta-académica/taekwondo</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/oferta-académica/scouts</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/oferta-académica/certificados</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Actividades -->
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/actividades</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contacto -->
+  <url>
+    <loc>https://www.guardianesdefrontera.com.ar/contacto</loc>
+    <lastmod>2025-09-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

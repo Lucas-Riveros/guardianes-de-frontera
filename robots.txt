@@ -1,0 +1,8 @@
+# robots.txt para guardianesdefrontera.com.ar
+# Indica a los motores de búsqueda cómo rastrear tu sitio
+
+# Permitimos todo lo demás
+Allow: /
+
+# Ubicación del sitemap para indexación rápida y correcta
+Sitemap: https://www.guardianesdefrontera.com.ar/sitemap.xml
