@@ -8,8 +8,8 @@
           "value": "guardianesdefrontera.com.ar"
         }
       ],
-      "destination": "https://www.guardianesdefrontera.com.ar/:1",
-      "permanent": true
+      "destination": "https://www.guardianesdefrontera.com.ar/$1",
+      "statusCode": 301
     }
   ],
   "rewrites": [
